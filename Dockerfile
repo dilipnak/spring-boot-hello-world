@@ -5,7 +5,7 @@ FROM openjdk:8-jdk-alpine
 WORKDIR /app
 
 # The application's jar file
-ARG JAR_FILE=build/libs/gs-spring-boot-0.1.0.jar
+ARG JAR_FILE=./build/libs/gs-spring-boot-0.1.0.jar
 
 # Copy the current directory contents into the container at /app
 ADD ${JAR_FILE} /app/gs-spring-boot.jar
